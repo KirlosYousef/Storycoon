@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import RealmSwift
 
-class StoryImage: Decodable {
+class StoryImage: Object, Decodable {
     
     @objc dynamic var urlString: String?
     @objc dynamic var caption: String?

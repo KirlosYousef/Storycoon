@@ -20,10 +20,8 @@ class StoryDataVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
-        
         if story != nil{
-            let imageURL = story?.images[0].url
+            let imageURL = story?.images[2].url
             storyImage.kf.indicatorType = .activity // Activity indicator
             storyImage.kf.setImage(with: imageURL,
                                    placeholder: UIImage(named: "NoPicture"),
@@ -35,15 +33,11 @@ class StoryDataVC: UIViewController {
         }
     }
     
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+    @IBAction func readMoreBtnPressed(_ sender: Any) {
+        if let url = URL(string: (story?.url)!) {
+            if UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.open(url, options: [:])
+            }
+        }
+    }
 }

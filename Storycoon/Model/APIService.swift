@@ -11,7 +11,7 @@ import Alamofire
 
 enum FetchingError: Error {
     case noConnection
-    case noStoredMovies
+    case noStoredStories
 }
 
 class APIService{

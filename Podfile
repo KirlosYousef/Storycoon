@@ -8,5 +8,5 @@ target 'Storycoon' do
   # Pods for Storycoon
   pod 'Alamofire'
   pod 'Kingfisher' 
-
+  pod 'RealmSwift'
 end

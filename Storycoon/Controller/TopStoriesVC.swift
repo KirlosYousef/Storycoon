@@ -11,15 +11,28 @@ import Kingfisher
 class TopStoriesVC: UIViewController {
     
     @IBOutlet weak var topStoriesTableView: UITableView!
+    
     private var storiesToShow: [Story] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         topStoriesTableView.delegate = self
         topStoriesTableView.dataSource = self
-        
-        // Do any additional setup after loading the view.
-        
+        listStories()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    /// Request to fectch the stories from the API.
+    private func listStories(){
         // Trying to fetch the stories from the API...
         APIService.shared.fetchStories { result in
             switch result{
@@ -40,6 +53,12 @@ extension TopStoriesVC: UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UIScreen.main.bounds.height / 6
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "StoryDataVC") as? StoryDataVC
+        vc?.story = storiesToShow[indexPath.row]
+        self.navigationController?.pushViewController(vc!, animated: true)
+    }
 }
 
 extension TopStoriesVC: UITableViewDataSource{
@@ -51,12 +70,14 @@ extension TopStoriesVC: UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = topStoriesTableView.dequeueReusableCell(withIdentifier: "StoryCell", for: indexPath) as! StoryCell
         
-        cell.storyTitle.text = storiesToShow[indexPath.row].title
-        cell.storyDate.text = storiesToShow[indexPath.row].pubDate
+        let story = storiesToShow[indexPath.row]
+        cell.story = story
+        cell.storyTitle.text = story.title
+        cell.storyDate.text = story.pubDate
         
         // Setting the image data to the cell imageView using Kingfisher.
         // "NoPicture" image will be replaced in case of a nil image.
-        let imageURL = storiesToShow[indexPath.row].images[0].url
+        let imageURL = story.images[2].url
         cell.storyImage.kf.indicatorType = .activity // Activity indicator
         cell.storyImage.kf.setImage(with: imageURL,
                                     placeholder: UIImage(named: "NoPicture"),

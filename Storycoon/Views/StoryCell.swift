@@ -12,6 +12,9 @@ class StoryCell: UITableViewCell {
     @IBOutlet weak var storyImage: UIImageView!
     @IBOutlet weak var storyTitle: UILabel!
     @IBOutlet weak var storyDate: UILabel!
+    @IBOutlet weak var bookmarkBtn: UIButton!
+    
+    var story: Story?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,7 +22,13 @@ class StoryCell: UITableViewCell {
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+        super.setSelected(false, animated: animated)
         // Configure the view for the selected state
+    }
+    
+    @IBAction func bookmarkBtnPressed(_ sender: Any) {
+        if story != nil{
+            RealmService.shared.addToDB(story: story!)
+        }
     }
 }
