@@ -1,0 +1,6 @@
+framework module Pods_Storycoon {
+  umbrella header "Pods-Storycoon-umbrella.h"
+
+  export *
+  module * { export * }
+}
