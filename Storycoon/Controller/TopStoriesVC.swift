@@ -11,6 +11,7 @@ import Kingfisher
 class TopStoriesVC: UIViewController {
     
     @IBOutlet weak var topStoriesTableView: UITableView!
+    @IBOutlet weak var tryAgainBtn: UIButton!
     
     private var storiesToShow: [Story] = []
     
@@ -19,6 +20,7 @@ class TopStoriesVC: UIViewController {
         topStoriesTableView.delegate = self
         topStoriesTableView.dataSource = self
         listStories()
+        tryAgainBtn.layer.cornerRadius = 5
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -39,9 +41,14 @@ class TopStoriesVC: UIViewController {
             case .success(let storiesData): // When receiving data from the database...
                 self.storiesToShow = storiesData.all
                 self.topStoriesTableView.reloadData() // Reload the table view
-            case .failure(let err): // If no data available on the databse.
-                print(err)
+                self.topStoriesTableView.alpha = 1 // Make sure that the table view is visable.
+            case .failure(_): // If no data available on the databse.
+                self.topStoriesTableView.alpha = 0 // hide the table view so the no internet connection image appears.
             }}
+    }
+    
+    @IBAction func tryAgainBtnPressed(_ sender: Any) {
+        listStories()
     }
 }
 

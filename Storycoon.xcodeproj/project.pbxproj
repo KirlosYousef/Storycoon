@@ -161,10 +161,10 @@
 			isa = PBXGroup;
 			children = (
 				BC6050932525C9590019EBA0 /* APIService.swift */,
+				BCE826EC2526387C00A01803 /* RealmService.swift */,
 				BC6050952525CA650019EBA0 /* Stories.swift */,
 				BC6050972525CA6F0019EBA0 /* Story.swift */,
 				BC6050992525D6190019EBA0 /* StoryImage.swift */,
-				BCE826EC2526387C00A01803 /* RealmService.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";

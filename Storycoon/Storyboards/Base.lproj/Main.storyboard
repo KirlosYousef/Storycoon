@@ -101,6 +101,82 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="FFx-2w-FkG">
+                                <rect key="frame" x="0.0" y="144" width="414" height="669"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoInternet" translatesAutoresizingMaskIntoConstraints="NO" id="iYI-0u-1ci">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="223"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="cuy-ff-ax9">
+                                        <rect key="frame" x="0.0" y="223" width="414" height="223"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zv5-Go-vhG">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Internet Connection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNa-Rp-pPX">
+                                                        <rect key="frame" x="10" y="10" width="394" height="118"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="UNa-Rp-pPX" firstAttribute="leading" secondItem="Zv5-Go-vhG" secondAttribute="leading" constant="10" id="H4O-oY-QQq"/>
+                                                    <constraint firstAttribute="trailing" secondItem="UNa-Rp-pPX" secondAttribute="trailing" constant="10" id="Nj5-g4-1Dg"/>
+                                                    <constraint firstAttribute="bottom" secondItem="UNa-Rp-pPX" secondAttribute="bottom" constant="10" id="PQM-Cp-Zgc"/>
+                                                    <constraint firstItem="UNa-Rp-pPX" firstAttribute="top" secondItem="Zv5-Go-vhG" secondAttribute="top" constant="10" id="uBK-8M-AI9"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nzQ-nK-3M4">
+                                                <rect key="frame" x="0.0" y="138" width="414" height="85"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please check your internet connection and try again." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ym6-1e-CXh">
+                                                        <rect key="frame" x="10" y="10" width="394" height="65"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="19"/>
+                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="ym6-1e-CXh" secondAttribute="bottom" constant="10" id="Mdr-hm-2sd"/>
+                                                    <constraint firstItem="ym6-1e-CXh" firstAttribute="top" secondItem="nzQ-nK-3M4" secondAttribute="top" constant="10" id="Pfa-Nn-N6d"/>
+                                                    <constraint firstItem="ym6-1e-CXh" firstAttribute="leading" secondItem="nzQ-nK-3M4" secondAttribute="leading" constant="10" id="o3j-ka-gFc"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ym6-1e-CXh" secondAttribute="trailing" constant="10" id="zLw-Z8-v1H"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="nzQ-nK-3M4" firstAttribute="width" secondItem="Zv5-Go-vhG" secondAttribute="height" multiplier="3:1" id="vmB-pu-e9Q"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdS-fo-TaU">
+                                        <rect key="frame" x="0.0" y="446" width="414" height="223"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPf-uJ-8dk">
+                                                <rect key="frame" x="132" y="0.0" width="150" height="60"/>
+                                                <color key="backgroundColor" red="1" green="0.30588235289999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="KdA-ez-8nP"/>
+                                                    <constraint firstAttribute="height" constant="60" id="xrs-26-8y4"/>
+                                                </constraints>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Try again">
+                                                    <color key="titleColor" systemColor="systemGray6Color"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="tryAgainBtnPressed:" destination="cUd-kr-AAK" eventType="touchUpInside" id="Fdj-gm-e0z"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="aPf-uJ-8dk" firstAttribute="top" secondItem="vdS-fo-TaU" secondAttribute="top" id="GqO-St-1CZ"/>
+                                            <constraint firstItem="aPf-uJ-8dk" firstAttribute="centerX" secondItem="vdS-fo-TaU" secondAttribute="centerX" id="PAi-f6-fX8"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hSb-mk-bE5">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -229,15 +305,20 @@
                         <viewLayoutGuide key="safeArea" id="4p5-Pd-6SR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="FFx-2w-FkG" firstAttribute="top" secondItem="4p5-Pd-6SR" secondAttribute="top" constant="100" id="170-aa-IeU"/>
                             <constraint firstItem="hSb-mk-bE5" firstAttribute="trailing" secondItem="4p5-Pd-6SR" secondAttribute="trailing" id="OMr-xD-cdj"/>
                             <constraint firstItem="hSb-mk-bE5" firstAttribute="leading" secondItem="4p5-Pd-6SR" secondAttribute="leading" id="QtX-ef-Wrg"/>
+                            <constraint firstItem="FFx-2w-FkG" firstAttribute="leading" secondItem="4p5-Pd-6SR" secondAttribute="leading" id="SvJ-GZ-22g"/>
                             <constraint firstItem="hSb-mk-bE5" firstAttribute="top" secondItem="jpK-fb-5Hj" secondAttribute="top" id="TpP-Qz-eI6"/>
+                            <constraint firstItem="4p5-Pd-6SR" firstAttribute="bottom" secondItem="FFx-2w-FkG" secondAttribute="bottom" id="Ynv-uG-1su"/>
+                            <constraint firstAttribute="trailing" secondItem="FFx-2w-FkG" secondAttribute="trailing" id="gap-h0-rSx"/>
                             <constraint firstItem="hSb-mk-bE5" firstAttribute="bottom" secondItem="4p5-Pd-6SR" secondAttribute="bottom" id="o8j-cr-HPK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dcS-gL-OBQ"/>
                     <connections>
                         <outlet property="topStoriesTableView" destination="hSb-mk-bE5" id="gf7-yU-REJ"/>
+                        <outlet property="tryAgainBtn" destination="aPf-uJ-8dk" id="zrp-mp-cOX"/>
                         <segue destination="9pc-ey-Pts" kind="show" identifier="toStoryDataVC" id="BhI-N9-kW5"/>
                     </connections>
                 </viewController>
@@ -442,11 +523,15 @@
         <segue reference="BhI-N9-kW5"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="NoInternet" width="1600" height="1200"/>
         <image name="heart" width="13" height="12"/>
         <image name="newspaper.fill" width="15" height="14"/>
         <image name="text.book.closed.fill" width="11" height="14"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
