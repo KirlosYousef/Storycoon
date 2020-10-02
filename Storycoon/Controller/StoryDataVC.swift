@@ -14,12 +14,12 @@ class StoryDataVC: UIViewController {
     @IBOutlet weak var storyTitle: UILabel!
     @IBOutlet weak var storyDate: UILabel!
     @IBOutlet weak var storyAbstract: UILabel!
+    @IBOutlet weak var goToArticleBtn: UIButton!
     
     var story: Story?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         if story != nil{
             let imageURL = story?.images[2].url
             storyImage.kf.indicatorType = .activity // Activity indicator
@@ -30,10 +30,11 @@ class StoryDataVC: UIViewController {
             storyTitle.text = story?.title
             storyDate.text = story?.pubDate
             storyAbstract.text = story?.abstract
+            goToArticleBtn.layer.cornerRadius = 5
         }
     }
     
-    @IBAction func readMoreBtnPressed(_ sender: Any) {
+    @IBAction func goToArticleBtnPressed(_ sender: Any) {
         if let url = URL(string: (story?.url)!) {
             if UIApplication.shared.canOpenURL(url) {
                 UIApplication.shared.open(url, options: [:])

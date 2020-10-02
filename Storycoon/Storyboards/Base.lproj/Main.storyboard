@@ -34,7 +34,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Bookmarked Articales" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2R-x9-jxp">
                                                         <rect key="frame" x="10" y="10" width="394" height="118"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
-                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="textColor" systemColor="secondaryLabelColor"/>
                                                     </label>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -50,8 +50,8 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can bookmark any articles to read back later or in offline mode." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sd5-1i-WT6">
                                                         <rect key="frame" x="10" y="10" width="394" height="186"/>
-                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="19"/>
-                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="19"/>
+                                                        <color key="textColor" systemColor="secondaryLabelColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -171,7 +171,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Internet Connection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNa-Rp-pPX">
                                                         <rect key="frame" x="10" y="10" width="394" height="118"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
-                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="textColor" systemColor="secondaryLabelColor"/>
                                                     </label>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -187,8 +187,8 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please check your internet connection and try again." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ym6-1e-CXh">
                                                         <rect key="frame" x="10" y="10" width="394" height="65"/>
-                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="19"/>
-                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="19"/>
+                                                        <color key="textColor" systemColor="secondaryLabelColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -274,7 +274,6 @@
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEg-hn-huK">
                                                                                     <rect key="frame" x="10" y="0.0" width="243" height="55.5"/>
                                                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
-                                                                                    <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                             </subviews>
@@ -294,8 +293,8 @@
                                                                                     <subviews>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="publication date / time of the article" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mK5-pS-EJi">
                                                                                             <rect key="frame" x="10" y="0.0" width="230.5" height="55.5"/>
-                                                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
-                                                                                            <nil key="textColor"/>
+                                                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
+                                                                                            <color key="textColor" systemColor="secondaryLabelColor"/>
                                                                                             <nil key="highlightedColor"/>
                                                                                         </label>
                                                                                     </subviews>
@@ -310,7 +309,7 @@
                                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTV-qb-Ge8">
                                                                                     <rect key="frame" x="250.5" y="0.0" width="12.5" height="55.5"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <color key="tintColor" systemColor="systemOrangeColor"/>
                                                                                     <state key="normal">
                                                                                         <color key="titleColor" red="0.046438641849999997" green="0.057476915419999997" blue="0.11553608629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                         <imageReference key="image" image="heart" symbolScale="small"/>
@@ -390,7 +389,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Gsa-4S-zz6">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="21j-h2-OKk">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="207"/>
@@ -413,13 +412,13 @@
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITY-EW-qne">
                                                                         <rect key="frame" x="0.0" y="0.0" width="187" height="144.5"/>
                                                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" systemColor="systemOrangeColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="publication date / time of the article" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ghz-Os-UTk">
                                                                         <rect key="frame" x="0.0" y="144.5" width="187" height="62.5"/>
-                                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
-                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
+                                                                        <color key="textColor" systemColor="secondaryLabelColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
@@ -448,15 +447,14 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6OA-W9-K0x">
-                                        <rect key="frame" x="0.0" y="207" width="414" height="518"/>
+                                        <rect key="frame" x="0.0" y="207" width="414" height="562"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="miB-En-vGJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="259"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="281"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abstract" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nwv-2y-hg1" userLabel="Abstract">
-                                                        <rect key="frame" x="10" y="10" width="394" height="239"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                                        <nil key="textColor"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abstract" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nwv-2y-hg1" userLabel="Abstract">
+                                                        <rect key="frame" x="10" y="10" width="394" height="261"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="25"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -469,25 +467,29 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="10R-G5-T43">
-                                                <rect key="frame" x="0.0" y="259" width="414" height="259"/>
+                                                <rect key="frame" x="0.0" y="281" width="414" height="281"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myi-LJ-oG3">
-                                                        <rect key="frame" x="0.0" y="159" width="414" height="100"/>
+                                                        <rect key="frame" x="107" y="186" width="200" height="75"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="100" id="ZLB-Oy-nj9"/>
+                                                            <constraint firstAttribute="width" constant="200" id="3H5-oX-Hol"/>
+                                                            <constraint firstAttribute="height" constant="75" id="ZLB-Oy-nj9"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                                        <state key="normal" title="Go To Article"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Go To Article">
+                                                            <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                                        </state>
                                                         <connections>
-                                                            <action selector="readMoreBtnPressed:" destination="9pc-ey-Pts" eventType="touchUpInside" id="y55-rW-HUl"/>
+                                                            <action selector="goToArticleBtnPressed:" destination="9pc-ey-Pts" eventType="touchUpInside" id="y55-rW-HUl"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="myi-LJ-oG3" secondAttribute="trailing" id="M1A-h4-guR"/>
-                                                    <constraint firstAttribute="bottom" secondItem="myi-LJ-oG3" secondAttribute="bottom" id="Uvu-Md-RGA"/>
-                                                    <constraint firstItem="myi-LJ-oG3" firstAttribute="leading" secondItem="10R-G5-T43" secondAttribute="leading" id="caf-8p-k3f"/>
+                                                    <constraint firstItem="myi-LJ-oG3" firstAttribute="centerX" secondItem="10R-G5-T43" secondAttribute="centerX" id="1dR-8J-kfE"/>
+                                                    <constraint firstAttribute="bottom" secondItem="myi-LJ-oG3" secondAttribute="bottom" constant="20" id="Uvu-Md-RGA"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -506,6 +508,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="b2K-wf-sOb"/>
                     <connections>
+                        <outlet property="goToArticleBtn" destination="myi-LJ-oG3" id="xNt-Hh-2EB"/>
                         <outlet property="storyAbstract" destination="Nwv-2y-hg1" id="vMV-XX-Pps"/>
                         <outlet property="storyDate" destination="Ghz-Os-UTk" id="NCl-US-dHd"/>
                         <outlet property="storyImage" destination="uF2-aS-iEU" id="9fA-3k-5IS"/>
@@ -524,6 +527,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="systemOrangeColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="FrC-0L-8Ts" kind="relationship" relationship="viewControllers" id="cVo-5v-hQ7"/>
@@ -575,19 +579,26 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mOb-z0-LFE"/>
+        <segue reference="BhI-N9-kW5"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" systemColor="systemOrangeColor"/>
     <resources>
         <image name="NoData" width="513.55999755859375" height="496.27999877929688"/>
         <image name="NoInternet" width="1600" height="1200"/>
         <image name="heart" width="13" height="12"/>
         <image name="newspaper.fill" width="15" height="14"/>
         <image name="text.book.closed.fill" width="11" height="14"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
