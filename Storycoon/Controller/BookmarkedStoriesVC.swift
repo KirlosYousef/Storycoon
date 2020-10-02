@@ -34,11 +34,13 @@ class BookmarkedStoriesVC: UIViewController {
     private func listBookmarkedStories(){
         // Trying to fetch the stories from the database...
         RealmService.shared.fetchStoriesFromDB { stories in
-            self.storiesToShow.removeAll()
-            for story in stories{
-                self.storiesToShow.append(story)
+            if stories.isEmpty{
+                self.storiesCollectionView.alpha = 0 // Hide the collection view so the no data view appears.
+            } else {
+                self.storiesToShow = stories.map({$0})
+                self.storiesCollectionView.reloadData()
+                self.storiesCollectionView.alpha = 1 // Make sure that the collection view is visable.
             }
-            self.storiesCollectionView.reloadData()
         }
     }
 }
@@ -65,6 +67,7 @@ extension BookmarkedStoriesVC: UICollectionViewDataSource{
         
         cell.storyTitle.text = story.title
         // Setting the image data to the cell imageView using Kingfisher.
+        // Images[2] is the image with size 150*150.
         // "NoPicture" image will be replaced in case of a nil image.
         let imageURL = story.images[2].url
         cell.storyImage.kf.indicatorType = .activity // Activity indicator
@@ -74,8 +77,6 @@ extension BookmarkedStoriesVC: UICollectionViewDataSource{
         
         return cell
     }
-    
-    
 }
 
 /// Setting the layout of the collection view اشcells.

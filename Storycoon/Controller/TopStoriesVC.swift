@@ -43,7 +43,7 @@ class TopStoriesVC: UIViewController {
                 self.topStoriesTableView.reloadData() // Reload the table view
                 self.topStoriesTableView.alpha = 1 // Make sure that the table view is visable.
             case .failure(_): // If no data available on the databse.
-                self.topStoriesTableView.alpha = 0 // hide the table view so the no internet connection image appears.
+                self.topStoriesTableView.alpha = 0 // Hide the table view so the no internet connection view appears.
             }}
     }
     
@@ -83,6 +83,7 @@ extension TopStoriesVC: UITableViewDataSource{
         cell.storyDate.text = story.pubDate
         
         // Setting the image data to the cell imageView using Kingfisher.
+        // Images[2] is the image with size 150*150.
         // "NoPicture" image will be replaced in case of a nil image.
         let imageURL = story.images[2].url
         cell.storyImage.kf.indicatorType = .activity // Activity indicator

@@ -11,7 +11,6 @@ import Alamofire
 
 enum FetchingError: Error {
     case noConnection
-    case noStoredStories
 }
 
 class APIService{
