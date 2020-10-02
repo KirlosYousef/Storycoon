@@ -71,7 +71,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NkM-3v-xaJ">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NkM-3v-xaJ">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6gW-X8-YQe">
@@ -214,7 +214,7 @@
                                         <rect key="frame" x="0.0" y="446" width="414" height="223"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPf-uJ-8dk">
-                                                <rect key="frame" x="132" y="0.0" width="150" height="60"/>
+                                                <rect key="frame" x="132" y="81.5" width="150" height="60"/>
                                                 <color key="backgroundColor" red="1" green="0.30588235289999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="KdA-ez-8nP"/>
@@ -231,7 +231,7 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="aPf-uJ-8dk" firstAttribute="top" secondItem="vdS-fo-TaU" secondAttribute="top" id="GqO-St-1CZ"/>
+                                            <constraint firstItem="aPf-uJ-8dk" firstAttribute="centerY" secondItem="vdS-fo-TaU" secondAttribute="centerY" id="1cd-ch-7bg"/>
                                             <constraint firstItem="aPf-uJ-8dk" firstAttribute="centerX" secondItem="vdS-fo-TaU" secondAttribute="centerX" id="PAi-f6-fX8"/>
                                         </constraints>
                                     </view>
@@ -296,10 +296,10 @@
                                                                             <rect key="frame" x="0.0" y="55.5" width="263" height="55.5"/>
                                                                             <subviews>
                                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MwL-cu-JFL">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="250.5" height="55.5"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="202" height="55.5"/>
                                                                                     <subviews>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="publication date / time of the article" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mK5-pS-EJi">
-                                                                                            <rect key="frame" x="10" y="0.0" width="230.5" height="55.5"/>
+                                                                                            <rect key="frame" x="10" y="0.0" width="182" height="55.5"/>
                                                                                             <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
                                                                                             <color key="textColor" systemColor="secondaryLabelColor"/>
                                                                                             <nil key="highlightedColor"/>
@@ -314,7 +314,7 @@
                                                                                     </constraints>
                                                                                 </view>
                                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTV-qb-Ge8">
-                                                                                    <rect key="frame" x="250.5" y="0.0" width="12.5" height="55.5"/>
+                                                                                    <rect key="frame" x="202" y="0.0" width="61" height="55.5"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                                                     <color key="tintColor" systemColor="systemOrangeColor"/>
                                                                                     <state key="normal">
