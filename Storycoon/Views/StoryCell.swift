@@ -21,7 +21,7 @@ class StoryCell: UITableViewCell {
         // Initialization code
         storyImage.layer.cornerRadius = 5
         storyImage.layer.borderWidth = 1.5
-        storyImage.layer.borderColor = UIColor.systemOrange.cgColor
+        storyImage.layer.borderColor = UIColor.systemOrange.withAlphaComponent(0.5).cgColor
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

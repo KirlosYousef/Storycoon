@@ -16,6 +16,6 @@ class BookmarkedStoryCell: UICollectionViewCell {
         // Initialization code
         storyImage.layer.cornerRadius = 5
         storyImage.layer.borderWidth = 2
-        storyImage.layer.borderColor = UIColor.systemOrange.cgColor
+        storyImage.layer.borderColor = UIColor.systemOrange.withAlphaComponent(0.5).cgColor
     }
 }
