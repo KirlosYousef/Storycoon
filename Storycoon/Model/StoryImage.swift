@@ -11,11 +11,9 @@ import RealmSwift
 class StoryImage: Object, Decodable {
     
     @objc dynamic var urlString: String?
-    @objc dynamic var caption: String?
     
     enum CodingKeys: String, CodingKey {
         case urlString = "url"
-        case caption
     }
     
 }
@@ -26,7 +24,7 @@ protocol Displayable {
 extension StoryImage: Displayable {
     var url: URL? {
         if urlString == nil {
-            return nil
+            return URL(string: "https://upload.wikimedia.org/wikipedia/en/6/60/No_Picture.jpg")
         }
         return URL(string: urlString!)!
     }
