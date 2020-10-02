@@ -215,7 +215,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPf-uJ-8dk">
                                                 <rect key="frame" x="132" y="81.5" width="150" height="60"/>
-                                                <color key="backgroundColor" red="1" green="0.30588235289999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="KdA-ez-8nP"/>
                                                     <constraint firstAttribute="height" constant="60" id="xrs-26-8y4"/>
@@ -598,7 +598,7 @@
     <color key="tintColor" systemColor="systemOrangeColor"/>
     <resources>
         <image name="NoData" width="513.55999755859375" height="496.27999877929688"/>
-        <image name="NoInternet" width="1600" height="1200"/>
+        <image name="NoInternet" width="3858" height="4427"/>
         <image name="heart" width="13" height="12"/>
         <image name="newspaper.fill" width="15" height="14"/>
         <image name="text.book.closed.fill" width="11" height="14"/>
