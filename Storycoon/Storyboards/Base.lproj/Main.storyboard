@@ -100,6 +100,7 @@
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="150" id="8jf-FO-KHH"/>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="180" id="onG-hC-1hs"/>
                                                     </constraints>
                                                 </stackView>
                                             </subviews>
