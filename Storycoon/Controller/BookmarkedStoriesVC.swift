@@ -82,7 +82,7 @@ extension BookmarkedStoriesVC: UICollectionViewDataSource{
 /// Setting the layout of the collection view اشcells.
 extension BookmarkedStoriesVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: UIScreen.main.bounds.width/3, height: 30)
+        return CGSize(width: 150, height: 30)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
