@@ -35,6 +35,7 @@ class StoryDataVC: UIViewController {
     }
     
     @IBAction func goToArticleBtnPressed(_ sender: Any) {
+        // Navigate to the article's url.
         if let url = URL(string: (story?.url)!) {
             if UIApplication.shared.canOpenURL(url) {
                 UIApplication.shared.open(url, options: [:])

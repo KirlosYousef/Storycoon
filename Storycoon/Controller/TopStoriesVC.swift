@@ -17,10 +17,11 @@ class TopStoriesVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        RealmService.shared.fetchStoriesFromDB(completionHandler: {_ in })
         topStoriesTableView.delegate = self
         topStoriesTableView.dataSource = self
-        listStories()
         tryAgainBtn.layer.cornerRadius = 5
+        listStories()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -90,6 +91,10 @@ extension TopStoriesVC: UITableViewDataSource{
         cell.storyImage.kf.setImage(with: imageURL,
                                     placeholder: UIImage(named: "NoPicture"),
                                     options: [.transition(.fade(0.5))])
+        
+        // Check if the article is already bookmarked, then change the bookmark button image to a solid heart.
+        let bookmarkBtnImage = RealmService.shared.isBookmarked(story: story) ? "heart.fill" : "heart"
+        cell.bookmarkBtn.setImage(UIImage.init(systemName: bookmarkBtnImage), for: .normal)
         
         return cell
     }

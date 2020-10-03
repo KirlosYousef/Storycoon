@@ -32,6 +32,7 @@ class StoryCell: UITableViewCell {
     @IBAction func bookmarkBtnPressed(_ sender: Any) {
         if story != nil{
             RealmService.shared.addToDB(story: story!)
+            bookmarkBtn.setImage(UIImage.init(systemName: "heart.fill"), for: .normal)
         }
     }
 }

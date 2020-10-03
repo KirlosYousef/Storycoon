@@ -13,10 +13,16 @@ enum FetchingError: Error {
     case noConnection
 }
 
+/// Responsible for all the API services.
 class APIService{
     
     static let shared = APIService()
     
+    /**
+     Fetches all the top articles from the API.
+     
+     - Parameter completionHandler: Sends back the result of type `Result` that contains either `Stories` if success or `FetchingError` if failure.
+     */
     func fetchStories(completionHandler: @escaping (Result<Stories, FetchingError>) -> Void){
         let url = "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=\(NYApiKey)"
         
